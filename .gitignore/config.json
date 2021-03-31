@@ -8,6 +8,10 @@
             "command_name":"R6"
         },
         {
+            "role_id":"826828353768128513",
+            "command_name":"R6"
+        },
+        {
             "role_id":"679760745382412311",
             "command_name":"FH4"
         },
@@ -20,7 +24,15 @@
             "command_name":"Payday2"
         },
         {
+            "role_id":"826828362307600396",
+            "command_name":"Payday2"
+        },
+        {
             "role_id":"607151523356606464",
+            "command_name":"Apex"
+        },
+        {
+            "role_id":"826828758447161344",
             "command_name":"Apex"
         },
         {
@@ -29,6 +41,10 @@
         },
         {
             "role_id":"607154423914954753",
+            "command_name":"Destiny2"
+        },
+        {
+            "role_id":"826828569514606633",
             "command_name":"Destiny2"
         },
         {
@@ -41,6 +57,10 @@
         },
         {
             "role_id":"607157020239331358",
+            "command_name":"Overwatch"
+        },
+        {
+            "role_id":"826829027925950556",
             "command_name":"Overwatch"
         },
         {
@@ -57,6 +77,10 @@
         },
         {
             "role_id":"753890185359523841",
+            "command_name":"Valorant"
+        },
+        {
+            "role_id":"826829173753774170",
             "command_name":"Valorant"
         },
         {
@@ -174,7 +198,38 @@
         {
             "role_id":"755321477150277675",
             "command_name":"AmongUS"
+        },
+        {
+            "role_id":"825118710200008704",
+            "command_name":"cs"
+        },
+        {
+            "role_id":"825129555052331109",
+            "command_name":"Accepter"
+        },
+        {
+            "role_id":"825129555052331109",
+            "command_name":"accepter"
+        },
+        {
+            "role_id":"826829255916781569",
+            "command_name":"LoL"
+        },
+        {
+            "role_id":"826829548582731787",
+            "command_name":"Minecraft"
+        },
+        {
+            "role_id":"826829823611240458",
+            "command_name":"GTAV"
+        },
+        {
+            "role_id":"826829936999661628",
+            "command_name":"Rust"
+        },
+        {
+            "role_id":"826830323256918087",
+            "command_name":"RL"
         }
-              
     ]
 }    
