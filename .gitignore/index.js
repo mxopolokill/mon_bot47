@@ -8,13 +8,10 @@ client.on("ready", () => {
   console.log("ok");
   handler(client, config);
   client.channels.cache.get("773275330521333821").send("redémarrage effectué");
+  client.channels.cache.get("826831040994607144").send("redémarrage effectué");
   client.user.setActivity(" salut 🙂 ");
 });
 
-client.on("message", message => {
-  if(message.content.channels(config.prefix + "cyber"))
-    message.reply('https://itexam24.com/cybersecurity-essentials-1-1/cybersecurity-essentials-1-1-chapter-1-quiz-answers-100-2018/');
-});
 
 client.on("message", message => {
   if (message.content.startsWith(config.prefix + "song")) {
