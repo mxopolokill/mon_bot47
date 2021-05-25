@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js"
   },
-  "author": "DG1T_MxoPoLoKiLL",
+  "author": "MxoPoLoKiLL",
   "license": "ISC",
   "dependencies": {
     "@discordjs/opus": "^0.3.3",
