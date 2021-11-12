@@ -8,10 +8,14 @@
     "warn": {
         "328734492523102218": 1
     },
-    "coins-utilisateurs": {},
-    "level-utilisateurs": {},
+    "coins-utilisateurs": {
+        "328734492523102218": 1
+    },
+    "level-utilisateurs": {
+        "328734492523102218": 0
+    },
     "message-bienvenue": "bienvenue sur le discord ! 🙂",
-    "statut-level": true,
+    "statut-level": false,
     "699308964575314041": {
         "prefix": "/",
         "test": "test"

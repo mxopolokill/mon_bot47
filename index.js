@@ -19,6 +19,7 @@ const bdd = require("./fonction/stockage/bdd.json")
 const message_bienvenue = require("./fonction/Admin/CommendeMessageBienvenueall")
 const warn = require("./fonction/Admin/Commandwarn")
 const stats = require("./fonction/statistique/statistique")
+const level = require("./fonction/systemeLevel/level")
 
 const messageDepart = require('./fonction/MessageWelcomedepart/messageDepart')
 
@@ -40,6 +41,8 @@ client.on("ready", () => {
     warn(client);
 
     stats(client);
+
+    level(client);
 
     client.user.setPresence({
         activity: {
