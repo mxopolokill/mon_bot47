@@ -2,6 +2,7 @@
     "prefix":"!",
     "separator":" / ",
     "token":"token",
+
     "commands":[
         {
             "role_id":"676506919183187981",

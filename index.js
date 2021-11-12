@@ -20,8 +20,11 @@ const message_bienvenue = require("./fonction/Admin/CommendeMessageBienvenueall"
 const warn = require("./fonction/Admin/Commandwarn")
 const stats = require("./fonction/statistique/statistique")
 const level = require("./fonction/systemeLevel/level")
+const statsyoutube = require("./fonction/donnéeYoutube/APIgoogle")
 
-const messageDepart = require('./fonction/MessageWelcomedepart/messageDepart')
+
+
+
 
 client.on("ready", () => { 
     console.log("ok");
@@ -43,6 +46,8 @@ client.on("ready", () => {
     stats(client);
 
     level(client);
+
+    statsyoutube(client);
 
     client.user.setPresence({
         activity: {
