@@ -10,7 +10,9 @@ module.exports = (client,config) =>{ //récuperation élement Client et config d
             //fonction commande role 
             if(command_Role){
                 m.member.roles.add(command_Role.role_id).then(mf=>{// ajout roles a un membre spécifique récuperant le command_Role et Role ID pour savoir quelle donner a l'utilisateur
+                    message.delete();
                     m.channel.send("Votre role a été ajouté")//le BOT répondra cela 
+                    
                     //récuperation de l'erreur en cache 
                 }).catch(err=>{
                     m.channel.send("Impossible d'ajouté le role ("+err.message+")") //le BOT répondra cela 

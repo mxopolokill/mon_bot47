@@ -1,0 +1,20 @@
+{
+    "stats": [
+        "1",
+        "2",
+        "3",
+        "soleil"
+    ],
+    "warn": {},
+    "coins-utilisateurs": {},
+    "level-utilisateurs": {},
+    "message-bienvenue": "bienvenue sur le discord ! 🙂",
+    "statut-level": true,
+    "699308964575314041": {
+        "prefix": "/",
+        "test": "test"
+    },
+    "channel-events": "",
+    "participants-event-1k": [],
+    "message-event-1k": ""
+}
