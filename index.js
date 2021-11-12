@@ -15,13 +15,13 @@ const MusicYT = require("./fonction/musique/musiqueYoutube")
 const Bienvenu = require("./fonction/MessageWelcomedepart/messageWelcome")
 const depart = require("./fonction/MessageWelcomedepart/messageDepart")
 const DeleteMessage = require("./fonction/Admin/CommandePurgeMessage")
-const bdd = require("./fonction/stockage/bdd.json")
 const message_bienvenue = require("./fonction/Admin/CommendeMessageBienvenueall")
 const warn = require("./fonction/Admin/Commandwarn")
 const stats = require("./fonction/statistique/statistique")
-const level = require("./fonction/systemeLevel/level")
 const statsyoutube = require("./fonction/donnéeYoutube/APIgoogle")
-
+const ban = require ("./fonction/Admin/Commandeban")
+const level = require("./fonction/systemeLevel/level")
+const queue = new Map();
 
 
 
@@ -45,9 +45,9 @@ client.on("ready", () => {
 
     stats(client);
 
-    level(client);
-
     statsyoutube(client);
+    
+    ban(client);
 
     client.user.setPresence({
         activity: {
