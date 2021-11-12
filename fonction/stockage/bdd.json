@@ -5,7 +5,9 @@
         "3",
         "soleil"
     ],
-    "warn": {},
+    "warn": {
+        "328734492523102218": 1
+    },
     "coins-utilisateurs": {},
     "level-utilisateurs": {},
     "message-bienvenue": "bienvenue sur le discord ! 🙂",

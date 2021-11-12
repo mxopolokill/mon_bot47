@@ -3,6 +3,7 @@ const fs = require("fs");
 
 
 
+
 module.exports = (client, message_bienvenue) =>{ 
     
    client.on("message", message => {
@@ -23,6 +24,8 @@ module.exports = (client, message_bienvenue) =>{
 
 });
 
+
+
 function Savebdd() {
     fs.writeFile("./fonction/stockage/bdd.json", JSON.stringify(bdd, null, 4), (err) =>{
         if (err) message.channel.send("Une erreur est survenue lors de la sauvegarde.");
@@ -31,6 +34,9 @@ function Savebdd() {
 }
 
 Savebdd();
+
+
+
 
 
 }

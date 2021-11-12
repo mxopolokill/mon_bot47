@@ -17,6 +17,7 @@ const depart = require("./fonction/MessageWelcomedepart/messageDepart")
 const DeleteMessage = require("./fonction/Admin/CommandePurgeMessage")
 const bdd = require("./fonction/stockage/bdd.json")
 const message_bienvenue = require("./fonction/Admin/CommendeMessageBienvenueall")
+const warn = require("./fonction/Admin/Commandwarn")
 
 const messageDepart = require('./fonction/MessageWelcomedepart/messageDepart')
 
@@ -35,8 +36,8 @@ client.on("ready", () => {
 
     message_bienvenue(client, message_bienvenue);
 
-    
-   
+    warn(client);
+
     client.user.setPresence({
         activity: {
             name: 'In Dev'
