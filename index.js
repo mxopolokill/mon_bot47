@@ -18,6 +18,7 @@ const DeleteMessage = require("./fonction/Admin/CommandePurgeMessage")
 const bdd = require("./fonction/stockage/bdd.json")
 const message_bienvenue = require("./fonction/Admin/CommendeMessageBienvenueall")
 const warn = require("./fonction/Admin/Commandwarn")
+const stats = require("./fonction/statistique/statistique")
 
 const messageDepart = require('./fonction/MessageWelcomedepart/messageDepart')
 
@@ -37,6 +38,8 @@ client.on("ready", () => {
     message_bienvenue(client, message_bienvenue);
 
     warn(client);
+
+    stats(client);
 
     client.user.setPresence({
         activity: {
