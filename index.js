@@ -21,12 +21,14 @@ const stats = require("./fonction/statistique/statistique")
 const statsyoutube = require("./fonction/donnéeYoutube/APIgoogle")
 const ban = require ("./fonction/Admin/Commandeban")
 const level = require("./fonction/systemeLevel/level")
+const guild = require("./fonction/stockage/guildcreate") 
+const bdd = require("./fonction/stockage/bdd.json")
+
 const queue = new Map();
 
 
+client.on("ready", async ()  => { 
 
-
-client.on("ready", () => { 
     console.log("ok");
    
     handler(client, config);
@@ -49,12 +51,16 @@ client.on("ready", () => {
     
     ban(client);
 
-    client.user.setPresence({
-        activity: {
-            name: 'In Dev'
-        },
-        status: 'dnd' 
-    })     
+    guild(client);
+
+    let statuts = bdd.stats
+    setInterval(function() {
+        let stats = statuts[Math.floor(Math.random()*statuts.length)];
+        client.user.setActivity(stats, {type: "STREAMING"})
+    }, 10000)
+   client.user.setStatus("dnd");
+
+       
   });
     
 

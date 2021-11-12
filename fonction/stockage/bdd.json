@@ -1,9 +1,11 @@
 {
     "stats": [
-        "1",
-        "2",
-        "3",
-        "soleil"
+        "en dev",
+        "!warn",
+        "!song",
+        "!clear",
+        "!stats",
+        "!ban"
     ],
     "warn": {
         "328734492523102218": 1
