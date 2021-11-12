@@ -23,6 +23,7 @@ const ban = require ("./fonction/Admin/Commandeban")
 const level = require("./fonction/systemeLevel/level")
 const guild = require("./fonction/stockage/guildcreate") 
 const bdd = require("./fonction/stockage/bdd.json")
+const userinfo = require("./fonction/userinfo/userinfo")
 
 const queue = new Map();
 
@@ -52,6 +53,8 @@ client.on("ready", async ()  => {
     ban(client);
 
     guild(client);
+
+    userinfo(client);
 
     let statuts = bdd.stats
     setInterval(function() {
