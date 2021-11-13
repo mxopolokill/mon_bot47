@@ -3,6 +3,8 @@
     "separator":" / ",
     "token":"token",
 
+    "guildSupport": "671441556988756010",
+
     "commands":[
         {
             "role_id":"676506919183187981",

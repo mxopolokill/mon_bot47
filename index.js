@@ -24,6 +24,7 @@ const level = require("./fonction/systemeLevel/level")
 const guild = require("./fonction/stockage/guildcreate") 
 const bdd = require("./fonction/stockage/bdd.json")
 const userinfo = require("./fonction/userinfo/userinfo")
+const ticket = require("./fonction/ticket")
 
 const queue = new Map();
 
@@ -36,13 +37,15 @@ client.on("ready", async ()  => {
     
     MusicYT(client);
 
-    Bienvenu(client);
+    ticket(client);
 
-    depart(client);
+    //Bienvenu(client);
+
+    //depart(client);
 
     DeleteMessage(client);
 
-    message_bienvenue(client, message_bienvenue);
+    // message_bienvenue(client, message_bienvenue);
 
     warn(client);
 
@@ -67,7 +70,8 @@ client.on("ready", async ()  => {
   });
     
 
- 
+  
+
 
 
  
