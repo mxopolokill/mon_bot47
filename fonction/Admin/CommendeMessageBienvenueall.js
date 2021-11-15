@@ -1,5 +1,6 @@
 const bdd = require("../stockage/bdd.json")
 const fs = require("fs");
+const config = require('../../config.json') 
 
 
 
@@ -8,7 +9,7 @@ module.exports = (client, message_bienvenue) =>{
     
    client.on("message", message => {
 
-    if(message.content.startsWith("!mb")){
+    if(message.content.startsWith( config.PREFIX + "mb")){
         message.delete();
             if(message.member.hasPermission('MANAGE_MESSAGES')){
                 if(message.content.length > 5) {

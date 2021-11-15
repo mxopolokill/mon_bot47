@@ -6,17 +6,17 @@ module.exports = (client) =>{
 
     client.on("message", async message => {
         if (message.author.bot) return;
-        if (!message.content.startsWith(config.prefix)) return;
+        if (!message.content.startsWith(config.PREFIX)) return;
       
         const serverQueue = queue.get(message.guild.id);
       
-        if (message.content.startsWith(`${config.prefix}song`)) {
+        if (message.content.startsWith(`${config.PREFIX}song`)) {
           execute(message, serverQueue).catch;
           return;
-        } else if (message.content.startsWith(`${config.prefix}skip`)) {
+        } else if (message.content.startsWith(`${config.PREFIX}skip`)) {
           skip(message, serverQueue);
           return;
-        } else if (message.content.startsWith(`${config.prefix}stop`)) {
+        } else if (message.content.startsWith(`${config.PREFIX}stop`)) {
           stop(message, serverQueue);
           return;
         } 

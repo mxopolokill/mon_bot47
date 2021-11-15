@@ -1,10 +1,12 @@
 const { MessageEmbed } = require('discord.js');
+const config = require('../../config.json') 
+
 
 module.exports = (client ) =>{ 
 
     client.on("message", message => {
 
-    if(message.content.startsWith("!stats")){
+    if(message.content.startsWith( config.PREFIX + "stats")){
     message.delete();
         let onlines = message.guild.members.cache.filter(
             ({ presence }) => presence.status !== 'offline').size;

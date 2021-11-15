@@ -4,8 +4,8 @@ module.exports = (client,config) =>{ //récuperation élement Client et config d
     //Commande pour ajouter des roles via commandes 
     client.on('message',m=>{  //
        //fontion pour la création de la commande 
-        if(m.content[0]==config.prefix){ // récupération du préfix et élément config 
-            m.cmd = m.content.replace(config.prefix,"").split(config.separator)// Prefix +  command_name
+        if(m.content[0]==config.PREFIX){ // récupération du préfix et élément config 
+            m.cmd = m.content.replace(config.PREFIX,"").split(config.separator)// Prefix +  command_name
             let command_Role =  config.commands.find(c=> c.command_name == m.cmd[0])
             //fonction commande role 
             if(command_Role){

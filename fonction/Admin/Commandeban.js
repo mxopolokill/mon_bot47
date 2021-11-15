@@ -1,9 +1,9 @@
-
+const config = require('../../config.json') 
 module.exports = (client) =>{ 
 
     client.on("message", message => {
 
-        if(message.content.startsWith("!ban")){
+        if(message.content.startsWith( config.PREFIX + "ban")){
 
             message.delete();
         

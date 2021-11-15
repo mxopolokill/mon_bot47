@@ -1,11 +1,11 @@
 const bdd = require("../stockage/bdd.json")
 const fs = require("fs");
-
+const config = require('../../config.json') 
 
 module.exports = (client) =>{
 
     client.on("message", message => {
-        if (message.content.startsWith === '!lvl') {
+        if (message.content.startsWith === config.PREFIX + 'lvl') {
             if (bdd["statut-level"] == true) {
                 bdd["statut-level"] = false
                 Savebdd();
@@ -18,7 +18,7 @@ module.exports = (client) =>{
         }
 
         if (bdd["statut-level"] == true) {
-            if (message.content.startsWith === '!level') {
+            if (message.content.startsWith === config.PREFIX + 'level') {
                 if (!bdd["coins-utilisateurs"][message.member.id]) return message.channel.send(`Nous n'avez pas encore posté de message !`);
                 return message.channel.send(`Vous avez ${bdd["coins-utilisateurs"][message.member.id]} points !\nEt vous êtes au level n°${bdd["level-utilisateurs"][message.member.id]}`)
             }

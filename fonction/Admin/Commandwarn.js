@@ -1,12 +1,13 @@
 const bdd = require("../stockage/bdd.json")
 const fs = require("fs");
+const config = require('../../config.json') 
 
 
 module.exports = (client) =>{ 
     
     client.on("message", message => {
 
-    if(message.content.startsWith("!warn")){
+    if(message.content.startsWith( config.PREFIX + "warn")){
 
     message.delete();
 

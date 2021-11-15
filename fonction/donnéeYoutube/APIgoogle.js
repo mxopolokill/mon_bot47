@@ -1,11 +1,11 @@
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 const { MessageEmbed } = require('discord.js');
-
+const config = require('../../config.json') 
 module.exports = (client) =>{ 
 
     client.on("message",  async message => { 
 
-        if(message.content.startsWith("!youtube")){
+        if(message.content.startsWith(config.PREFIX + "youtube")){
          message.delete();   
             const data = await fetch('https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCZTiApraopd_HGwua9F0aug&key=AIzaSyCYoWHpd7oyCsk_-ChETT1UwvYDD4yK_1A').then(response => response.json());
             

@@ -2,11 +2,13 @@ const discord = require('discord.js')
 
 const moment = require('moment');
 
+const config = require('../../config.json');
+
 module.exports = (client) =>{ 
    
     client.on("message", message => { 
         
-        if (message.content.startsWith("!info")) {
+        if (message.content.startsWith(config.PREFIX + "info")) {
             if(message.mentions.users.first()) {
                 user = message.mentions.users.first();
            } else{

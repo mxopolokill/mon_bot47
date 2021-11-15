@@ -1,8 +1,9 @@
+const config = require('../../config.json') 
 module.exports = (client) =>{ 
     
     client.on("message", message => {
 
-    if(message.content.startsWith("!clear")){
+    if(message.content.startsWith(config.PREFIX + "clear")){
 
     message.delete();
 
